@@ -12507,6 +12507,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSpeed: {x: 5, y: 5}
+  MouseAimMaxAngle: 70
+  MouseAimMinAngle: -70
 --- !u!1001 &1544941436
 PrefabInstance:
   m_ObjectHideFlags: 0
