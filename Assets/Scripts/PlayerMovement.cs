@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PLayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
+    public Vector2 mouseSpeed;
     private float vertMouse;
     private float horzMouse;
     private Transform cam;
@@ -17,8 +18,8 @@ public class PLayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        vertMouse = Input.GetAxis("Mouse X");
-        horzMouse = Input.GetAxis("Mouse Y");
+        vertMouse = Input.GetAxis("Mouse X") * mouseSpeed.x;
+        horzMouse = Input.GetAxis("Mouse Y") * mouseSpeed.y;
         Debug.Log("vert:" + vertMouse);
         vertMouse += cam.localEulerAngles.y;
         horzMouse -= cam.localEulerAngles.x;
