@@ -32,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         vertMouse += Input.GetAxis("Mouse X") * mouseSpeed.x;
         horzMouse += Input.GetAxis("Mouse Y") * mouseSpeed.y;
 
+        //make sure the new angle is in the clamp limit:
         vertMouse = Mathf.Clamp(vertMouse, MouseAimMinAngle, MouseAimMaxAngle);
         horzMouse = Mathf.Clamp(horzMouse, MouseAimMinAngle, MouseAimMaxAngle);
 
