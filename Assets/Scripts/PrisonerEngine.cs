@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
-namespace alexshko.prisonescape.Core
+namespace alexshko.prisonescape.Prisoners
 {
     public class PrisonerEngine : MonoBehaviour
     {
