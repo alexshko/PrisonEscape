@@ -78,12 +78,11 @@ namespace alexshko.prisonescape.Core
             float moveX = Input.GetAxis("Horizontal");
             moveToMake = moveZ * transform.forward + moveX * transform.right;
             moveToMake = moveToMake.normalized * playerSpeed * Time.deltaTime;
-            //moveToMake = new Vector3(moveX, 0, moveZ).normalized  * playerSpeed * Time.deltaTime;
-            character.SimpleMove(moveToMake);
         }
 
         private void FixedUpdate()
         {
+            character.SimpleMove(moveToMake);
         }
     }
 }
