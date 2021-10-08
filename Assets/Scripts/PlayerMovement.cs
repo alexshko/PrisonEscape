@@ -6,6 +6,8 @@ namespace alexshko.prisonescape.Core
 {
     public class PlayerMovement : MonoBehaviour
     {
+        public float playerSpeed = 10;
+
         public Vector2 mouseSpeed;
         public float MouseAimMaxAngle = 90;
         public float MouseAimMinAngle = -90;
@@ -16,6 +18,8 @@ namespace alexshko.prisonescape.Core
         private CharacterController character;
         private Transform cam;
         private RifleMechanism rifleRef;
+
+        private Vector3 moveToMake;
 
         // Start is called before the first frame update
         void Start()
@@ -41,6 +45,7 @@ namespace alexshko.prisonescape.Core
         void Update()
         {
             MakeMouseMove();
+            MakeMove();
             if (Input.GetButton("Fire1"))
             {
                 FireWaepon();
@@ -67,7 +72,18 @@ namespace alexshko.prisonescape.Core
     
         private void MakeMove()
         {
-            //cha
+            moveToMake = Vector3.zero;
+
+            float moveZ = Input.GetAxis("Vertical");
+            float moveX = Input.GetAxis("Horizontal");
+            moveToMake = moveZ * transform.forward + moveX * transform.right;
+            moveToMake = moveToMake.normalized * playerSpeed * Time.deltaTime;
+            //moveToMake = new Vector3(moveX, 0, moveZ).normalized  * playerSpeed * Time.deltaTime;
+            character.SimpleMove(moveToMake);
+        }
+
+        private void FixedUpdate()
+        {
         }
     }
 }
