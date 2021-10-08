@@ -13,6 +13,7 @@ namespace alexshko.prisonescape.Core
         private float vertMouse;
         private float horzMouse;
 
+        private CharacterController character;
         private Transform cam;
         private RifleMechanism rifleRef;
 
@@ -27,6 +28,12 @@ namespace alexshko.prisonescape.Core
             if (rifleRef == null)
             {
                 Debug.LogError("Missing Rifle Component");
+            }
+
+            character = GetComponent<CharacterController>();
+            if (character == null)
+            {
+                Debug.LogError("Missing character controller");
             }
         }
 
@@ -55,7 +62,12 @@ namespace alexshko.prisonescape.Core
             horzMouse = Mathf.Clamp(horzMouse, MouseAimMinAngle, MouseAimMaxAngle);
 
             Debug.Log("vert:" + vertMouse);
-            cam.localEulerAngles = new Vector3(-horzMouse, vertMouse, 0);
+            character.transform.localEulerAngles = new Vector3(-horzMouse, vertMouse, 0);
+        }
+    
+        private void MakeMove()
+        {
+            //cha
         }
     }
 }
