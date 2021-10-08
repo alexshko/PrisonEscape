@@ -10,7 +10,8 @@ namespace alexshko.prisonescape.Shooting
         public float maxDistance = 200;
         public int bulletsInFullStack = 30;
         public float bulletsInSecond = 3;
-        public Transform shotEffectPref;
+        public Transform gunShotEffectPref;
+        public Transform EmptySpotShotEffectPref;
 
         [SerializeField]
         private int bulletsLeft;
@@ -30,7 +31,7 @@ namespace alexshko.prisonescape.Shooting
             if (Time.time > timeOfLastShot + 1.0f / bulletsInSecond)
             {
                 //make effect on the gun:
-                Instantiate(shotEffectPref, transform.position, Quaternion.identity);
+                Instantiate(gunShotEffectPref, transform.position, Quaternion.identity);
                 timeOfLastShot = Time.time;
                 bulletsLeft--;
 
@@ -54,7 +55,7 @@ namespace alexshko.prisonescape.Shooting
                 else
                 {
                     //doesn't have LifeEngine, will have a spark.
-                    Transform bloodEffect = Instantiate(shotEffectPref, hit.point, Quaternion.identity);
+                    Transform bloodEffect = Instantiate(EmptySpotShotEffectPref, hit.point + new Vector3(0,0.1f,0), Quaternion.identity);
                     bloodEffect.LookAt(hit.point + hit.normal);
                     Debug.LogFormat("shot an obstacle");
                 }
