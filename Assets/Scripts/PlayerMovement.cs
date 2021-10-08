@@ -46,16 +46,12 @@ namespace alexshko.prisonescape.Core
         {
             MakeMouseMove();
             MakeMove();
-            if (Input.GetButton("Fire1"))
-            {
-                FireWaepon();
-            }
         }
 
-        private void FireWaepon()
-        {
-            rifleRef.Fire();
-        }
+        //private void FireWaepon()
+        //{
+        //    rifleRef.Fire();
+        //}
 
         private void MakeMouseMove()
         {

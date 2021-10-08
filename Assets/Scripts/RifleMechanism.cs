@@ -24,6 +24,14 @@ namespace alexshko.prisonescape.Shooting
             bulletsLeft = bulletsInFullStack;
         }
 
+        private void Update()
+        {
+            if (Input.GetButton("Fire1"))
+            {
+                Fire();
+            }
+        }
+
         public void Fire()
         {
 
