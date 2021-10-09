@@ -7,10 +7,9 @@ namespace alexshko.prisonescape.life
     {
         public LifeEngine lifeEngRef;
 
-        private Camera cam;
         private Slider sliderLife;
         // Start is called before the first frame update
-        void Start()
+        void Awake()
         {
             if (lifeEngRef == null)
             {
@@ -22,13 +21,11 @@ namespace alexshko.prisonescape.life
             {
                 Debug.LogError("Missing Slider in hirearchy");
             }
-            cam = Camera.main;
         }
 
         // Update is called once per frame
         void Update()
         {
-            transform.LookAt(cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0)));
             sliderLife.value = Mathf.Clamp01(lifeEngRef.LifeLeft / lifeEngRef.maxLife);
         }
     }
