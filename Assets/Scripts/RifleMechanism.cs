@@ -1,5 +1,4 @@
-﻿using alexshko.prisonescape.Core;
-using System;
+﻿using alexshko.prisonescape.life;
 using UnityEngine;
 
 namespace alexshko.prisonescape.Shooting

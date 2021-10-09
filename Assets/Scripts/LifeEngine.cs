@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace alexshko.prisonescape.Core
+namespace alexshko.prisonescape.life
 {
     public class LifeEngine : MonoBehaviour
     {
@@ -9,14 +9,13 @@ namespace alexshko.prisonescape.Core
 
         [SerializeField]
         private int lifeLeft;
-
         //will be used for lifebar and check how much life left for other classes.
         public int LifeLeft
         {
             get => lifeLeft;
         }
 
-        private void Start()
+        private void Awake()
         {
             lifeLeft = maxLife;
         }
@@ -31,6 +30,7 @@ namespace alexshko.prisonescape.Core
 
             lifeLeft -= damage;
             lifeLeft = Mathf.Clamp(lifeLeft, 0, maxLife);
+
             if (lifeLeft <= 0)
             {
                 Destroy(this.gameObject);
