@@ -12,6 +12,8 @@ namespace alexshko.prisonescape.Shooting
         public float bulletsInSecond = 3;
         public Transform gunShotEffectPref;
         public Transform EmptySpotShotEffectPref;
+        [Tooltip("Transform of the barrel of the gun, for fire effects")]
+        public Transform BarrelPosRef;
 
         [SerializeField]
         private int bulletsLeft;
@@ -38,11 +40,12 @@ namespace alexshko.prisonescape.Shooting
             //make sure enough time passed since last shot so it will keep the fire frequency:
             if (Time.time > timeOfLastShot + 1.0f / bulletsInSecond)
             {
-                //make effect on the gun:
-                Instantiate(gunShotEffectPref, transform.position, Quaternion.identity);
+                //make effect on the rifle mechanism, usually on the end of the barrel.
+                Instantiate(gunShotEffectPref, BarrelPosRef.position, Quaternion.identity);
                 timeOfLastShot = Time.time;
                 bulletsLeft--;
 
+                //make the shot itself, including finding the target object and making effects over there:
                 MakeShotToTarget();
             }
         }
@@ -52,9 +55,12 @@ namespace alexshko.prisonescape.Shooting
             RaycastHit hit;
 
             Vector3 aimWorldSpace = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
+
+            //if hit something in the world:
             if (Physics.Raycast(aimWorldSpace, Camera.main.transform.forward, out hit, maxDistance))
             {
                 Debug.LogFormat("hit: {0}", hit.transform.name);
+                //if hit something with life, let the lifeEngine class deal with it (make blood and so on). otherwise, the RifleMechanism makes an effect on the hit spot.
                 if (hit.transform.GetComponent<LifeEngine>() != null)
                 {
                     //has LifeEngine, shoud have an effect from the LifeEngine of the object.
