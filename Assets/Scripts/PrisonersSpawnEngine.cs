@@ -36,7 +36,7 @@ namespace alexshko.prisonescape.Prisoners
             timeLastSpawn = Time.time;
             for (int i=0;i<PrisonersPerInterval; i++)
             {
-                PrisonerEngine prisoner = Instantiate(prisonerPref, spawnStartPosition.position, Quaternion.identity).GetComponent<PrisonerEngine>();
+                PrisonerNavigationEngine prisoner = Instantiate(prisonerPref, spawnStartPosition.position, Quaternion.identity).GetComponent<PrisonerNavigationEngine>();
                 prisoner.target = chooseRandomTarget();
                 prisoner.startGoingToTarget();
             }

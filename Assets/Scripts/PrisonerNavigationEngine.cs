@@ -3,7 +3,7 @@ using UnityEngine.AI;
 
 namespace alexshko.prisonescape.Prisoners
 {
-    public class PrisonerEngine : MonoBehaviour
+    public class PrisonerNavigationEngine : MonoBehaviour
     {
         public Transform target { get; set; }
 
