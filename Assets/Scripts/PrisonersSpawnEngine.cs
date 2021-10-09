@@ -8,7 +8,7 @@ namespace alexshko.prisonescape.Prisoners
     public class PrisonersSpawnEngine : MonoBehaviour
     {
         public Transform prisonerPref;
-        public Transform spawStartPosition;
+        public Transform spawnStartPosition;
         public int PrisonersPerInterval = 3;
         public float secondsBetweenIntervals = 2;
 
@@ -36,8 +36,9 @@ namespace alexshko.prisonescape.Prisoners
             timeLastSpawn = Time.time;
             for (int i=0;i<PrisonersPerInterval; i++)
             {
-                PrisonerEngine prisoner = Instantiate(prisonerPref, spawStartPosition.position, Quaternion.identity).GetComponent<PrisonerEngine>();
+                PrisonerEngine prisoner = Instantiate(prisonerPref, spawnStartPosition.position, Quaternion.identity).GetComponent<PrisonerEngine>();
                 prisoner.target = chooseRandomTarget();
+                prisoner.startGoingToTarget();
             }
         }
 

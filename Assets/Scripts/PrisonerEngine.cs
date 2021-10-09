@@ -14,7 +14,7 @@ namespace alexshko.prisonescape.Prisoners
             navAgent = GetComponent<NavMeshAgent>();
         }
 
-        public void startGoingToDestination()
+        public void startGoingToTarget()
         {
             navAgent.SetDestination(target.position);
 
