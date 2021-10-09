@@ -1,11 +1,13 @@
 ﻿using alexshko.prisonescape.life;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace alexshko.prisonescape.Prisoners
 {
     public class PrisonersSpawnEngine : MonoBehaviour
     {
+        public Text CountOfKilledUIRef;
         public Transform prisonerPref;
         public Transform spawnStartPosition;
         public int PrisonersPerInterval = 3;
@@ -68,6 +70,7 @@ namespace alexshko.prisonescape.Prisoners
         private void PrisonerActionOnDeath()
         {
             prisonersKilled++;
+            CountOfKilledUIRef.text = prisonersKilled.ToString();
             Debug.LogFormat("Killed so far: {0}", prisonersKilled);
         }
     }
