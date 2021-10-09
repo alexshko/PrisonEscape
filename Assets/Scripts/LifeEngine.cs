@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace alexshko.prisonescape.life
 {
@@ -6,6 +7,8 @@ namespace alexshko.prisonescape.life
     {
         public int maxLife = 100;
         public Transform shotEffectPref;
+        //event that happens when the entity dies:
+        public Action OnDieEvent { get; set; }
 
         [SerializeField]
         private int lifeLeft;
@@ -33,6 +36,10 @@ namespace alexshko.prisonescape.life
 
             if (lifeLeft <= 0)
             {
+                if (OnDieEvent != null)
+                {
+                    OnDieEvent();
+                }
                 Destroy(this.gameObject);
             }
         }

@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletDamage: 35
-  maxDistance: 200
+  maxDistance: 400
   bulletsInFullStack: 30
   bulletsInSecond: 7
   gunShotEffectPref: {fileID: 7055422556436840178, guid: 335ccf0aeef1b654cb6a9ce5df186f02, type: 3}

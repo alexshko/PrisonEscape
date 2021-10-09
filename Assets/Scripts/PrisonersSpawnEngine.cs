@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using alexshko.prisonescape.life;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace alexshko.prisonescape.Prisoners
@@ -13,9 +14,12 @@ namespace alexshko.prisonescape.Prisoners
         private List<Transform> EscapeTargets;
         private float timeLastSpawn;
 
+        private int prisonersKilled;
+
 
         private void Start()
         {
+            prisonersKilled = 0;
             EscapeTargets = new List<Transform>();
             timeLastSpawn = Time.time;
             fIndAllEscapeTargets();
@@ -35,6 +39,7 @@ namespace alexshko.prisonescape.Prisoners
             for (int i=0;i<PrisonersPerInterval; i++)
             {
                 PrisonerEngine prisoner = Instantiate(prisonerPref, spawnStartPosition.position, Quaternion.identity).GetComponent<PrisonerEngine>();
+                prisoner.GetComponent<LifeEngine>().OnDieEvent += PrisonerActionOnDeath;
                 prisoner.target = chooseRandomTarget();
                 prisoner.startGoingToTarget();
             }
@@ -58,7 +63,12 @@ namespace alexshko.prisonescape.Prisoners
                     EscapeTargets.Add(possibleTarget);
                 }
             }
+        }
 
+        private void PrisonerActionOnDeath()
+        {
+            prisonersKilled++;
+            Debug.LogFormat("Killed so far: {0}", prisonersKilled);
         }
     }
 }
