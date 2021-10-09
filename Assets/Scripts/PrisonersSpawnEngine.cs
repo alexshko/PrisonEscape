@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace alexshko.prisonescape.Prisoners
@@ -36,7 +34,7 @@ namespace alexshko.prisonescape.Prisoners
             timeLastSpawn = Time.time;
             for (int i=0;i<PrisonersPerInterval; i++)
             {
-                PrisonerNavigationEngine prisoner = Instantiate(prisonerPref, spawnStartPosition.position, Quaternion.identity).GetComponent<PrisonerNavigationEngine>();
+                PrisonerEngine prisoner = Instantiate(prisonerPref, spawnStartPosition.position, Quaternion.identity).GetComponent<PrisonerEngine>();
                 prisoner.target = chooseRandomTarget();
                 prisoner.startGoingToTarget();
             }

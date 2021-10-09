@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+﻿using alexshko.prisonescape.Core;
+using UnityEngine;
 using UnityEngine.AI;
 
 namespace alexshko.prisonescape.Prisoners
 {
-    public class PrisonerNavigationEngine : MonoBehaviour
+    public class PrisonerEngine : MonoBehaviour
     {
         public Transform target { get; set; }
 
@@ -17,6 +18,15 @@ namespace alexshko.prisonescape.Prisoners
         {
             navAgent.SetDestination(target.position);
 
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            Debug.Log("Prisoner entered trigger");
+            if (other.tag == "EscapeTarget")
+            {
+                GameController.Instance.FinishGame();
+            }
         }
     }
 }
