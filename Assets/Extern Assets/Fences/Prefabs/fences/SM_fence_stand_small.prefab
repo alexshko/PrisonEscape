@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 3359506}
   - component: {fileID: 2372560}
   - component: {fileID: 6433886}
+  - component: {fileID: 653920798307898}
   m_Layer: 0
   m_Name: fence_stand_small_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 95
   m_IsActive: 1
 --- !u!4 &438312
 Transform:
@@ -97,6 +98,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300014, guid: cd9b78a9c86705d46a80fffd2c17b681, type: 3}
+--- !u!208 &653920798307898
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107504}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.294, y: 0.75000006, z: 0.9990001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.254, y: 0.75000006, z: 0.9990001}
+  m_TimeToStationary: 0.5
 --- !u!1 &109770
 GameObject:
   m_ObjectHideFlags: 0

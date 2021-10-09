@@ -44,7 +44,9 @@ namespace alexshko.prisonescape.Prisoners
 
         private Transform chooseRandomTarget()
         {
-            return EscapeTargets.ToArray()[0];
+            //is it distributed uniformly?
+            int rnd = (int)(UnityEngine.Random.Range(0,EscapeTargets.Count));
+            return EscapeTargets.ToArray()[rnd];
         }
 
         private void fIndAllEscapeTargets()
@@ -57,7 +59,6 @@ namespace alexshko.prisonescape.Prisoners
                     EscapeTargets.Add(possibleTarget);
                 }
             }
-            //EscapeTargets = GameObject.FindGameObjectsWithTag("EscapeTarget");
 
         }
     }
