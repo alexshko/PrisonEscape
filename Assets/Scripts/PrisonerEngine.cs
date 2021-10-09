@@ -8,8 +8,7 @@ namespace alexshko.prisonescape.Prisoners
         public Transform target { get; set; }
 
         private NavMeshAgent navAgent;
-        // Start is called before the first frame update
-        void Start()
+        private void Awake()
         {
             navAgent = GetComponent<NavMeshAgent>();
         }
