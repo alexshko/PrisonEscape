@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 379554807}
-  m_IndirectSpecularColor: {r: 0.57906467, g: 0.6140393, b: 0.6570505, a: 1}
+  m_IndirectSpecularColor: {r: 0.3956983, g: 0.3621831, b: 0.2853615, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -895,23 +895,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 0.3885
+      value: 1.6277648e+32
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 9.1838e-41
+      value: 2.6452547e+20
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 0.318
+      value: 0.0000000025676978
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 0.3405
+      value: 3.072576e+32
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -956,6 +956,14 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.64e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 6.9784524e+22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -1044,20 +1052,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 161275002}
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: -6.9e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 0.265625
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 40
+      value: 2.3548584
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 12
+      value: 6.25e-43
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1102,6 +1114,18 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 5e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 1.309e-41
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -1558,7 +1582,6 @@ Transform:
   - {fileID: 1222627309}
   - {fileID: 1322208406}
   - {fileID: 574363678}
-  - {fileID: 5221358782601879435}
   - {fileID: 578032861}
   - {fileID: 182025260721878157}
   - {fileID: 915349263}
@@ -1582,6 +1605,7 @@ Transform:
   - {fileID: 318778172}
   - {fileID: 2140100293}
   - {fileID: 483881852}
+  - {fileID: 276860922}
   m_Father: {fileID: 133974996}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1700,9 +1724,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 161275002}
     m_Modifications:
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 4e-45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 9.464415e+21
+      objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1747,6 +1783,22 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 4.240153e+19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 6.25e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 1.351732e-29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 6.24e-43
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -1846,15 +1898,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: -4.848721e-17
+      value: 1.15796905e+27
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 3e-45
+      value: 4.8011534e+30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 1.8888916e+31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 2.9386304e+29
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1900,6 +1960,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomLamp (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 6.5650027e+28
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 6.25e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 1.351732e-29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 6.24e-43
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
 --- !u!4 &241814634 stripped
@@ -1915,16 +1991,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 161275002}
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 4e-45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1970,6 +2054,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomLamp (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 3.747e-41
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 1.6926445e+22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 0.0000000025669011
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 3.072576e+32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
 --- !u!4 &256132956 stripped
@@ -1986,19 +2086,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: -6.376316e-17
+      value: 1.7225331e+22
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: NaN
+      value: 4.8011534e+30
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: NaN
+      value: 1.8888916e+31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 2.9386304e+29
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2044,12 +2148,106 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomLamp (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 4.2369865e+19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 1e-45
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
 --- !u!4 &275069925 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
   m_PrefabInstance: {fileID: 275069924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &276860921
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 161275002}
+    m_Modifications:
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 2.749739e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: -7.604141
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 6.24e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 31.367
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_Name
+      value: RoomLamp (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 8.8248e-41
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+--- !u!4 &276860922 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+  m_PrefabInstance: {fileID: 276860921}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &306204670
 PrefabInstance:
@@ -2060,19 +2258,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 1e-45
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 1.470461e-39
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 1.470736e-39
+      value: 9.3943e-41
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2117,6 +2319,10 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -2229,19 +2435,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: -4.9683056e-15
+      value: 10.3125
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 7.09e-43
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 9.0109e-41
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 1.4205e-41
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2287,6 +2497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomLamp (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 8.8147e-41
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
 --- !u!4 &318778172 stripped
@@ -2301,9 +2515,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 161275002}
     m_Modifications:
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.15796905e+27
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 4.8011534e+30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 1.8888916e+31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 2.9386304e+29
+      objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2348,6 +2578,14 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 10.1875
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 8.8013e-41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -2593,16 +2831,16 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 2.8572376e+32, y: 0, z: 0, w: 2.59e-43}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
-  m_ShadowAngle: 0
+  m_ShadowAngle: 2
 --- !u!4 &379554808
 Transform:
   m_ObjectHideFlags: 0
@@ -3115,15 +3353,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 29.333334
+      value: 2.0996876
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 6.25e-43
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 25.333334
+      value: 7.67e-43
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3168,6 +3410,18 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 109.44635
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 6.25e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 4.9e-44
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -7044,19 +7298,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: -4.3427194e-17
+      value: 1.7225331e+22
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 7.09e-43
+      value: 4.8011534e+30
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 4.08e-43
+      value: 1.8888916e+31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 2.9386304e+29
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7101,6 +7359,14 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -7356,6 +7622,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 161275002}
     m_Modifications:
+    - target: {fileID: 5564595892531308754, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564595892531308754, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564595892531308754, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 8.6841e-41
+      objectReference: {fileID: 0}
     - target: {fileID: 5564595892819575952, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
       propertyPath: m_Name
       value: Lamp (6)
@@ -7470,6 +7748,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23082483581203986, guid: 0ed13cad75935b948931ae905d3d2db5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23082483581203986, guid: 0ed13cad75935b948931ae905d3d2db5, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ed13cad75935b948931ae905d3d2db5, type: 3}
 --- !u!4 &576355037 stripped
@@ -7486,23 +7772,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 7.6e-44
+      value: 11.75
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 7.1e-44
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 7.3e-44
+      value: 9.5243e-41
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 7.4e-44
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7547,6 +7833,14 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 8.8248e-41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -7667,20 +7961,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 161275002}
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 2.4348013e+20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 0.12109375
+      value: 7.215475e+22
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 41.333336
+      value: 10.026964
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 13.333333
+      value: 7.2715916e+31
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7725,6 +8023,22 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 7.3333335
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 10.666667
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -8575,19 +8889,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 107.33203
+      value: 1.15796905e+27
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 4.8011534e+30
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 8.047333
+      value: 1.8888916e+31
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 7.09e-43
+      value: 2.9386304e+29
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8632,6 +8950,22 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.04e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 5.262e-42
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -8789,31 +9123,35 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Range
-      value: 11.16
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Intensity
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_SpotAngle
       value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.15796905e+27
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 0.18359375
+      value: 4.8011534e+30
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 17.333336
+      value: 1.8888916e+31
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 12.666666
+      value: 2.9386304e+29
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8858,6 +9196,18 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 8.7071e-41
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -9438,19 +9788,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 1e-45
+      value: 6.71875
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 1.470461e-39
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 1.470736e-39
+      value: 9.0978e-41
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9495,6 +9845,14 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 8.7917e-41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -10772,20 +11130,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 161275002}
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 0.265625
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 54
+      value: 9.3865e-41
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10830,6 +11192,14 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.3509243e-29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 8.7637e-41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -11455,6 +11825,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 161275002}
     m_Modifications:
+    - target: {fileID: 5564595892531308754, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: -5.2385294e-32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564595892531308754, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564595892531308754, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 9.53e-41
+      objectReference: {fileID: 0}
     - target: {fileID: 5564595892819575952, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
       propertyPath: m_Name
       value: Lamp (4)
@@ -11587,6 +11969,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 161275002}
     m_Modifications:
+    - target: {fileID: 5564595892531308754, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 4e-45
+      objectReference: {fileID: 0}
     - target: {fileID: 5564595892819575952, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
       propertyPath: m_Name
       value: Lamp (3)
@@ -12183,11 +12569,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5564595892531308754, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 145.33334
+      value: 9.403955e-38
       objectReference: {fileID: 0}
     - target: {fileID: 5564595892531308754, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 139.33334
+      value: 8.5014e-41
       objectReference: {fileID: 0}
     - target: {fileID: 5564595892819575952, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
       propertyPath: m_Name
@@ -13440,19 +13826,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 4e-45
+      value: 2.4348013e+20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 7.215475e+22
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 2.37e-43
+      value: 10.026964
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 1e-45
+      value: 7.2715916e+31
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13497,6 +13887,10 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1e-45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -13757,15 +14151,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 1e-45
+      value: 15.315002
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 3e-45
+      value: 6.25e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 6.0491066
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 6.25e-43
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13810,6 +14212,18 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 1.58e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -13921,20 +14335,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 161275002}
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.7225331e+22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 0.18359375
+      value: 4.8011534e+30
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 43.333336
+      value: 1.8888916e+31
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 12.666666
+      value: 2.9386304e+29
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13979,6 +14397,18 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.351732e-29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 6.25e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 9.23e-43
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -14749,6 +15179,101 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6073929414191816341, guid: 1cf885c76c5ce8147b4511b7ca99e76a, type: 3}
   m_PrefabInstance: {fileID: 1682222492}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1699764580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1699764584}
+  - component: {fileID: 1699764583}
+  - component: {fileID: 1699764582}
+  - component: {fileID: 1699764581}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1699764581
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699764580}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1699764582
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699764580}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1699764583
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699764580}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1699764584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699764580}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 16.279999, y: 22.9, z: 18.67}
+  m_LocalScale: {x: 1, y: 7.5053015, z: 0.14318334}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1733065705
 GameObject:
   m_ObjectHideFlags: 0
@@ -15062,20 +15587,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 161275002}
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 2.3316174
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 0.18359375
+      value: 6.25e-43
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 43.333336
+      value: 8.34e-43
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 12.666666
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15120,6 +15649,10 @@ PrefabInstance:
     - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_Name
       value: RoomLamp (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 4e-45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
@@ -19443,6 +19976,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 161275002}
     m_Modifications:
+    - target: {fileID: 5564595892531308754, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564595892531308754, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 9.155e-41
+      objectReference: {fileID: 0}
     - target: {fileID: 5564595892819575952, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
       propertyPath: m_Name
       value: Lamp (1)
@@ -19916,20 +20457,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 161275002}
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 0.12109375
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 41.333336
+      value: 8.799e-41
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 13.333333
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19991,15 +20536,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 1e-45
+      value: 9.403955e-38
       objectReference: {fileID: 0}
     - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 3e-45
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 9.0815e-41
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20045,6 +20598,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomLamp (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 5.34375
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424088421574767623, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 8.387e-41
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
 --- !u!4 &182025260721878157 stripped
@@ -20052,87 +20613,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
   m_PrefabInstance: {fileID: 182025260721878156}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &271635263117194743
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 161275002}
-    m_Modifications:
-    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_Range
-      value: 11.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_Intensity
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_SpotAngle
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_BoundingSphereOverride.w
-      value: -4.6949207e-15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_BoundingSphereOverride.y
-      value: 1e-45
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128473490507325, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_BoundingSphereOverride.z
-      value: 7.09e-43
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 21.58
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 31.367
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 18.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5454128474321595007, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-      propertyPath: m_Name
-      value: RoomLamp
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
 --- !u!1001 &419704359207897651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20236,12 +20716,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 161275002}
     m_Modifications:
     - target: {fileID: 5564595892531308754, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.04e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 5564595892531308754, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 20.666666
+      value: 1.95e-43
       objectReference: {fileID: 0}
     - target: {fileID: 5564595892531308754, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 11.333333
+      value: 1.1391e-41
       objectReference: {fileID: 0}
     - target: {fileID: 5564595892819575952, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
       propertyPath: m_Name
@@ -20297,11 +20781,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5564595892819575955, guid: ac817b6c7c281d84d9a12f388951ff08, type: 3}
   m_PrefabInstance: {fileID: 4436177545299167060}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5221358782601879435 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5454128474321595004, guid: 6287e5763a6965a47bae3035abd7d543, type: 3}
-  m_PrefabInstance: {fileID: 271635263117194743}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5564595892565351929
 PrefabInstance:
