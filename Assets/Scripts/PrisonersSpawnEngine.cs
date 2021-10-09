@@ -46,6 +46,7 @@ namespace alexshko.prisonescape.Prisoners
         {
             //is it distributed uniformly?
             int rnd = (int)(UnityEngine.Random.Range(0,EscapeTargets.Count));
+            Debug.LogFormat("random number: {0}", rnd);
             return EscapeTargets.ToArray()[rnd];
         }
 
