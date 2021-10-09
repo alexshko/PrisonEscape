@@ -6,8 +6,10 @@ namespace alexshko.prisonescape.life
     public class LifeBar : MonoBehaviour
     {
         public LifeEngine lifeEngRef;
+        public float animSpeed = 4;
 
         private Slider sliderLife;
+        private float valueToShow;
         // Start is called before the first frame update
         void Awake()
         {
@@ -26,7 +28,8 @@ namespace alexshko.prisonescape.life
         // Update is called once per frame
         void Update()
         {
-            sliderLife.value = Mathf.Clamp01(lifeEngRef.LifeLeft / lifeEngRef.maxLife);
+            valueToShow = Mathf.Clamp01(lifeEngRef.LifeLeft * 1.0f / lifeEngRef.maxLife);
+            sliderLife.value = Mathf.Lerp(sliderLife.value, valueToShow , animSpeed * Time.deltaTime);
         }
     }
 }
