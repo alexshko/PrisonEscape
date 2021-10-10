@@ -1,6 +1,7 @@
 ﻿using alexshko.prisonescape.life;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace alexshko.prisonescape.Shooting
 {
@@ -12,21 +13,34 @@ namespace alexshko.prisonescape.Shooting
         public float bulletsInSecond = 3;
         public LayerMask layersToShoot;
 
+        [Tooltip("Text component to update the number of bullets left")]
+        public Text textBulletsLeftRef;
+
         [Header("Shooting Effects:")]
         public Transform gunShotEffectPref;
         public Transform EmptySpotShotEffectPref;
         [Tooltip("Transform of the barrel of the gun, for fire effects")]
         public Transform BarrelPosRef;
 
-        [SerializeField]
         private int bulletsLeft;
+        //always when update number of bullets we should update the text in the ui:
+        [SerializeField]
+        private int BulletsLeft
+        {
+            get => bulletsLeft;
+            set
+            {
+                bulletsLeft = value;
+                updateBulletsText();
+            }
+        }
         private float timeOfLastShot = 0;
         private Animator anim;
 
         // Start is called before the first frame update
         void Start()
         {
-            bulletsLeft = bulletsInFullStack;
+            BulletsLeft = bulletsInFullStack;
             anim = GetComponent<Animator>();
         }
 
@@ -46,7 +60,7 @@ namespace alexshko.prisonescape.Shooting
         {
             anim.SetTrigger("Reload");
             await Task.Delay(500);
-            bulletsLeft = bulletsInFullStack;
+            BulletsLeft = bulletsInFullStack;
 
             //Vector3 initPosOfStack = stackRef.position;
             //Vector3 finalPosOfStack = stackRef.position + Vector3.down * stackReloadAnimOffset;
@@ -70,12 +84,12 @@ namespace alexshko.prisonescape.Shooting
         {
 
             //make sure enough time passed since last shot so it will keep the fire frequency:
-            if ((Time.time > timeOfLastShot + 1.0f / bulletsInSecond) && (bulletsLeft > 0))
+            if ((Time.time > timeOfLastShot + 1.0f / bulletsInSecond) && (BulletsLeft > 0))
             {
                 //make effect on the rifle mechanism, usually on the end of the barrel.
                 Instantiate(gunShotEffectPref, BarrelPosRef.position, Quaternion.identity);
                 timeOfLastShot = Time.time;
-                bulletsLeft--;
+                BulletsLeft--;
 
                 //make the shot itself, including finding the target object and making effects over there:
                 MakeShotToTarget();
@@ -105,6 +119,14 @@ namespace alexshko.prisonescape.Shooting
                     bloodEffect.LookAt(hit.point + hit.normal);
                     Debug.LogFormat("shot an obstacle");
                 }
+            }
+        }
+
+        private void updateBulletsText()
+        {
+            if (textBulletsLeftRef)
+            {
+                textBulletsLeftRef.text = BulletsLeft.ToString();
             }
         }
     }
