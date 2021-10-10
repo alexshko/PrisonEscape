@@ -4,6 +4,8 @@ namespace alexshko.prisonescape.Core
 {
     public class FollowCamera : MonoBehaviour
     {
+        //reference to the camera that the object has to follow.
+        //e.g. Lifebar on the prisoner that follows the camera
         private Camera cam;
 
         // Start is called before the first frame update

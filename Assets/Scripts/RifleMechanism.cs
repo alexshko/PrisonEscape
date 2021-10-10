@@ -46,7 +46,7 @@ namespace alexshko.prisonescape.Shooting
 
         private void Update()
         {
-            if (Core.GameController.Instance.isGameActive)
+            if (Core.GameController.Instance.isGamePlaying)
             {
                 if (Input.GetButton("Fire1"))
                 {
@@ -64,23 +64,6 @@ namespace alexshko.prisonescape.Shooting
             anim.SetTrigger("Reload");
             await Task.Delay(500);
             BulletsLeft = bulletsInFullStack;
-
-            //Vector3 initPosOfStack = stackRef.position;
-            //Vector3 finalPosOfStack = stackRef.position + Vector3.down * stackReloadAnimOffset;
-            //for (float i = 0; i <= 1; i+=Time.deltaTime)
-            //{
-            //    stackRef.position = Vector3.Lerp(initPosOfStack, finalPosOfStack, i);
-            //    if (Vector3.Distance(stackRef.position, finalPosOfStack) < 0.05f)
-            //    {
-            //        Debug.Log("Got to final postion");
-            //    }
-            //    await Task.Delay(10);
-            //}
-            //for (float i = Time.deltaTime; i <= 1; i += Time.deltaTime)
-            //{
-            //    stackRef.position = Vector3.Lerp(finalPosOfStack, initPosOfStack, i);
-            //    await Task.Delay(10);
-            //}
         }
 
         public void Fire()

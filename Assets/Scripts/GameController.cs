@@ -4,8 +4,13 @@ namespace alexshko.prisonescape.Core
 {
     public class GameController : MonoBehaviour
     {
+        [Tooltip("the UI panel to show when the game is over")]
         public Transform gameOverUIRef;
-        public bool isGameActive { get; set; }
+
+        //boolean to indicate if the game is playing currently. mainly for syncing with other classes:
+        public bool isGamePlaying { get; set; }
+
+        //singelton pattern:
         public static GameController Instance
         {
             get => instance;
@@ -15,7 +20,7 @@ namespace alexshko.prisonescape.Core
         private void Awake()
         {
             instance = this;
-            isGameActive = true;
+            isGamePlaying = true;
         }
 
         public void FinishGame()
@@ -23,8 +28,9 @@ namespace alexshko.prisonescape.Core
             Debug.Log("Finished Game.");
             if (gameOverUIRef)
             {
+                //call the game over Panel:
                 gameOverUIRef.gameObject.SetActive(true);
-                isGameActive = false;
+                isGamePlaying = false;
             }
         }
     }

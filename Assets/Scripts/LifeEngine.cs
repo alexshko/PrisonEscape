@@ -5,8 +5,11 @@ namespace alexshko.prisonescape.life
 {
     public class LifeEngine : MonoBehaviour
     {
+        [Tooltip("Initial Life")]
         public int maxLife = 100;
+        [Tooltip("Prefab of the shoot effect on the hitted object.")]
         public Transform shotEffectPref;
+
         //event that happens when the entity dies:
         public Action OnDieEvent { get; set; }
 
@@ -31,9 +34,11 @@ namespace alexshko.prisonescape.life
             Transform bloodEffect = Instantiate(shotEffectPref, worldSpacePosition, Quaternion.identity);
             bloodEffect.LookAt(worldSpacePosition + normalOfSurface);
 
+            //apply damage and make sure it's within limits:
             lifeLeft -= damage;
             lifeLeft = Mathf.Clamp(lifeLeft, 0, maxLife);
 
+            //if life less than zero, call event and destroy the prisoner:
             if (lifeLeft <= 0)
             {
                 if (OnDieEvent != null)

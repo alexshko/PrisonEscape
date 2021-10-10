@@ -8,7 +8,7 @@ namespace alexshko.prisonescape.Core
     {
         public void LoadLevel(string name)
         {
-            MyLoadScene(name);
+            MyLoadScene(name).ConfigureAwait(true);
         }
 
         public void QuitGame() {
