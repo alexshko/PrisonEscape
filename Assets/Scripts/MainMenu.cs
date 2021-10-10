@@ -15,7 +15,7 @@ namespace alexshko.prisonescape.Core
             Application.Quit();
         }
 
-        private async void MyLoadScene(string name)
+        private async Task MyLoadScene(string name)
         {
             AsyncOperation ao = SceneManager.LoadSceneAsync(name);
             while (!ao.isDone)

@@ -1,4 +1,5 @@
 ﻿using alexshko.prisonescape.life;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace alexshko.prisonescape.Shooting
@@ -10,6 +11,12 @@ namespace alexshko.prisonescape.Shooting
         public int bulletsInFullStack = 30;
         public float bulletsInSecond = 3;
         public LayerMask layersToShoot;
+
+        [Header("Reload Animation:")]
+        float stackReloadAnimOffset = 0.3f;
+        [Tooltip("Reference to the stack gameobject")]
+        public Transform stackRef;
+        [Header("Shooting Effects:")]
         public Transform gunShotEffectPref;
         public Transform EmptySpotShotEffectPref;
         [Tooltip("Transform of the barrel of the gun, for fire effects")]
@@ -17,13 +24,14 @@ namespace alexshko.prisonescape.Shooting
 
         [SerializeField]
         private int bulletsLeft;
-
         private float timeOfLastShot = 0;
+        private Animator anim;
 
         // Start is called before the first frame update
         void Start()
         {
             bulletsLeft = bulletsInFullStack;
+            anim = GetComponent<Animator>();
         }
 
         private void Update()
@@ -32,13 +40,41 @@ namespace alexshko.prisonescape.Shooting
             {
                 Fire();
             }
+            if (Input.GetButtonDown("Reload"))
+            {
+                MakeReload().ConfigureAwait(true);
+            }
+        }
+
+        private async Task MakeReload()
+        {
+            anim.SetTrigger("Reload");
+            await Task.Delay(500);
+            bulletsLeft = bulletsInFullStack;
+
+            //Vector3 initPosOfStack = stackRef.position;
+            //Vector3 finalPosOfStack = stackRef.position + Vector3.down * stackReloadAnimOffset;
+            //for (float i = 0; i <= 1; i+=Time.deltaTime)
+            //{
+            //    stackRef.position = Vector3.Lerp(initPosOfStack, finalPosOfStack, i);
+            //    if (Vector3.Distance(stackRef.position, finalPosOfStack) < 0.05f)
+            //    {
+            //        Debug.Log("Got to final postion");
+            //    }
+            //    await Task.Delay(10);
+            //}
+            //for (float i = Time.deltaTime; i <= 1; i += Time.deltaTime)
+            //{
+            //    stackRef.position = Vector3.Lerp(finalPosOfStack, initPosOfStack, i);
+            //    await Task.Delay(10);
+            //}
         }
 
         public void Fire()
         {
 
             //make sure enough time passed since last shot so it will keep the fire frequency:
-            if (Time.time > timeOfLastShot + 1.0f / bulletsInSecond)
+            if ((Time.time > timeOfLastShot + 1.0f / bulletsInSecond) && (bulletsLeft > 0))
             {
                 //make effect on the rifle mechanism, usually on the end of the barrel.
                 Instantiate(gunShotEffectPref, BarrelPosRef.position, Quaternion.identity);
