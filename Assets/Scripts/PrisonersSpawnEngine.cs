@@ -29,9 +29,12 @@ namespace alexshko.prisonescape.Prisoners
 
         private void Update()
         {
-            if (Time.time >= timeLastSpawn + secondsBetweenIntervals)
+            if (Core.GameController.Instance.isGameActive)
             {
-                MakeSpawn();
+                if (Time.time >= timeLastSpawn + secondsBetweenIntervals)
+                {
+                    MakeSpawn();
+                }
             }
         }
 

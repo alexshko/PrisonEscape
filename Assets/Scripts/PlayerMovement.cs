@@ -43,8 +43,11 @@ namespace alexshko.prisonescape.Core
         // Update is called once per frame
         void Update()
         {
-            MakeMouseMove();
-            MakeMove();
+            if (Core.GameController.Instance.isGameActive)
+            {
+                MakeMouseMove();
+                MakeMove();
+            }
         }
 
         //private void FireWaepon()
@@ -77,7 +80,10 @@ namespace alexshko.prisonescape.Core
 
         private void FixedUpdate()
         {
-            character.SimpleMove(moveToMake);
+            if (Core.GameController.Instance.isGameActive)
+            {
+                character.SimpleMove(moveToMake);
+            }
         }
     }
 }

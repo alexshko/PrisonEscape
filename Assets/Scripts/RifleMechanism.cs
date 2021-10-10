@@ -46,13 +46,16 @@ namespace alexshko.prisonescape.Shooting
 
         private void Update()
         {
-            if (Input.GetButton("Fire1"))
+            if (!Core.GameController.Instance.isGameActive)
             {
-                Fire();
-            }
-            if (Input.GetButtonDown("Reload"))
-            {
-                MakeReload().ConfigureAwait(true);
+                if (Input.GetButton("Fire1"))
+                {
+                    Fire();
+                }
+                if (Input.GetButtonDown("Reload"))
+                {
+                    MakeReload().ConfigureAwait(true);
+                }
             }
         }
 
