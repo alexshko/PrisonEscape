@@ -9,6 +9,7 @@ namespace alexshko.prisonescape.Shooting
         public float maxDistance = 200;
         public int bulletsInFullStack = 30;
         public float bulletsInSecond = 3;
+        public LayerMask layersToShoot;
         public Transform gunShotEffectPref;
         public Transform EmptySpotShotEffectPref;
         [Tooltip("Transform of the barrel of the gun, for fire effects")]
@@ -56,7 +57,7 @@ namespace alexshko.prisonescape.Shooting
             Vector3 aimWorldSpace = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
 
             //if hit something in the world:
-            if (Physics.Raycast(aimWorldSpace, Camera.main.transform.forward, out hit, maxDistance))
+            if (Physics.Raycast(aimWorldSpace, Camera.main.transform.forward, out hit, maxDistance, layersToShoot))
             {
                 Debug.LogFormat("hit: {0}", hit.transform.name);
                 //if hit something with life, let the lifeEngine class deal with it (make blood and so on). otherwise, the RifleMechanism makes an effect on the hit spot.

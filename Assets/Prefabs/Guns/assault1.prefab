@@ -129,6 +129,9 @@ MonoBehaviour:
   maxDistance: 400
   bulletsInFullStack: 30
   bulletsInSecond: 7
+  layersToShoot:
+    serializedVersion: 2
+    m_Bits: 768
   gunShotEffectPref: {fileID: 7055422556436840178, guid: 335ccf0aeef1b654cb6a9ce5df186f02, type: 3}
   EmptySpotShotEffectPref: {fileID: 48454015217731055, guid: dccebb61ae861fa49974085816e8e858, type: 3}
   BarrelPosRef: {fileID: 689839411}
