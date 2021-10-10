@@ -12,10 +12,6 @@ namespace alexshko.prisonescape.Shooting
         public float bulletsInSecond = 3;
         public LayerMask layersToShoot;
 
-        [Header("Reload Animation:")]
-        float stackReloadAnimOffset = 0.3f;
-        [Tooltip("Reference to the stack gameobject")]
-        public Transform stackRef;
         [Header("Shooting Effects:")]
         public Transform gunShotEffectPref;
         public Transform EmptySpotShotEffectPref;

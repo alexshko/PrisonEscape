@@ -21247,7 +21247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3044577260121964347, guid: 256ebebe3d501fa469f130e158890eb8, type: 3}
       propertyPath: bulletsInFullStack
-      value: 5
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6071131863189625774, guid: 256ebebe3d501fa469f130e158890eb8, type: 3}
       propertyPath: m_RootOrder

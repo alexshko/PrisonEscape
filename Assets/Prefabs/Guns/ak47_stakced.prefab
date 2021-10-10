@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 4903244202984792257}
   - component: {fileID: 8948251076202154573}
   - component: {fileID: 3044577260121964347}
+  - component: {fileID: 2178125661965745736}
   m_Layer: 0
   m_Name: ak47_stakced
   m_TagString: Untagged
@@ -143,7 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletDamage: 35
   maxDistance: 400
-  bulletsInFullStack: 30
+  bulletsInFullStack: 40
   bulletsInSecond: 7
   layersToShoot:
     serializedVersion: 2
@@ -151,8 +152,26 @@ MonoBehaviour:
   gunShotEffectPref: {fileID: 7055422556436840178, guid: 335ccf0aeef1b654cb6a9ce5df186f02, type: 3}
   EmptySpotShotEffectPref: {fileID: 48454015217731055, guid: dccebb61ae861fa49974085816e8e858, type: 3}
   BarrelPosRef: {fileID: 1872967805029722525}
-  stackRef: {fileID: 793255437283781151}
   bulletsLeft: 0
+--- !u!95 &2178125661965745736
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6848619266460696852}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eb2e98bd933d78c4f9940f2dcaa4c0ce, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7370864508601639975
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,7 +199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7370864508601639975}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 1.9430339e-17, y: 0.0060190014, z: 0.071099}
+  m_LocalPosition: {x: 1.943034e-17, y: 0.0060190014, z: 0.071099}
   m_LocalScale: {x: 42.740078, y: 42.740078, z: 42.740078}
   m_Children: []
   m_Father: {fileID: 6071131863189625774}
