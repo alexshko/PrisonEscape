@@ -46,7 +46,7 @@ namespace alexshko.prisonescape.Shooting
 
         private void Update()
         {
-            if (!Core.GameController.Instance.isGameActive)
+            if (Core.GameController.Instance.isGameActive)
             {
                 if (Input.GetButton("Fire1"))
                 {
