@@ -552,7 +552,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef08ef7e5fe71f24897e693e686e3846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CountOfKilledUIRef: {fileID: 1812358045}
+  CountOfKilledUIRef:
+  - {fileID: 1812358045}
+  - {fileID: 1284874795}
   prisonerPref: {fileID: 8679026628156254264, guid: cda010fa1a8641348b16ee6372d317b8, type: 3}
   spawnStartPosition: {fileID: 830778391}
   PrisonersPerInterval: 2
@@ -12765,7 +12767,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100
+  m_Text: 0
 --- !u!222 &1284874796
 CanvasRenderer:
   m_ObjectHideFlags: 0

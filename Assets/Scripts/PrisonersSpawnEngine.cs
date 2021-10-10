@@ -7,7 +7,7 @@ namespace alexshko.prisonescape.Prisoners
 {
     public class PrisonersSpawnEngine : MonoBehaviour
     {
-        public Text CountOfKilledUIRef;
+        public Text[] CountOfKilledUIRef;
         public Transform prisonerPref;
         public Transform spawnStartPosition;
         public int PrisonersPerInterval = 3;
@@ -73,7 +73,10 @@ namespace alexshko.prisonescape.Prisoners
         private void PrisonerActionOnDeath()
         {
             prisonersKilled++;
-            CountOfKilledUIRef.text = prisonersKilled.ToString();
+            foreach (var txtUIItem in CountOfKilledUIRef)
+            {
+                txtUIItem.text = prisonersKilled.ToString();
+            }
             Debug.LogFormat("Killed so far: {0}", prisonersKilled);
         }
     }
