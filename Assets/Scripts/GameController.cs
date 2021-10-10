@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace alexshko.prisonescape.Core
 {
@@ -18,7 +19,7 @@ namespace alexshko.prisonescape.Core
         public void FinishGame()
         {
             Debug.Log("Finished Game.");
-            Application.Quit();
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }
