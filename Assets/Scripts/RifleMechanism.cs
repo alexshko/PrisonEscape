@@ -8,18 +8,24 @@ namespace alexshko.prisonescape.Shooting
     public class RifleMechanism : MonoBehaviour
     {
         public int bulletDamage = 10;
+        [Tooltip("Max. distance the rifle can shoot and hit. beyond that the bullet will fire but not hit.")]
         public float maxDistance = 200;
+        [Tooltip("amount of bullets in a stack. When finished, the player has to reload to keep shooting")]
         public int bulletsInFullStack = 30;
+        [Tooltip("Rate of fire. Number of bullets per second.")]
         public float bulletsInSecond = 3;
+        [Tooltip("What layers the rifle can fire at.")]
         public LayerMask layersToShoot;
 
         [Tooltip("Text component to update the number of bullets left")]
         public Text textBulletsLeftRef;
 
         [Header("Shooting Effects:")]
+        [Tooltip("Effect of sparks at the barrel of the gun")]
         public Transform gunShotEffectPref;
+        [Tooltip("Effect of sparks from shot at a spot in correct layer.")]
         public Transform EmptySpotShotEffectPref;
-        [Tooltip("Transform of the barrel of the gun, for fire effects")]
+        [Tooltip("Transform of the barrel of the gun, for fire effect")]
         public Transform BarrelPosRef;
 
         private int bulletsLeft;
