@@ -1,3 +1,4 @@
+Assets/Extern Assets/
 Prog/
 [Ll]ibrary/
 [Tt]emp/
@@ -36,4 +37,3 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-*.png
